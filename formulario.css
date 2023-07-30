@@ -1,0 +1,43 @@
+.dados {
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    height: 180px;
+     width: 550px;
+  
+}
+
+.dados1 {
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    height: 100px;
+     width: 550px;
+  
+}
+
+.botoes {
+    display: flex;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+
+
+#interesse {
+    padding-bottom: 20px;
+    margin-top: 30px;
+
+}
+
+h1 {
+    padding: 10px;
+}
+ 
+#msg{ 
+    margin: 10px;
+    width: 350px;
+    height: 60px;
+}

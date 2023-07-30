@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+
+<header><h1>Formulário</h1></header>
+<body>
+    <form id="meuformulario">
+        <div class="dados1">
+            Dados Pessoais
+        
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="usuario_nome" required>
+        </div>
+        <div>
+          <label for="Endereço">Endereço:</label>
+          <input type="text" id="Endereço" name="Endereço" required>
+        </div>
+        <div>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="Cidade" name="Cidade"  required>
+          </div>
+          <div>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" list="estadosList" required>
+            <datalist id="estadosList">
+                <option value="ac">Acre</option> 
+                <option value="al">Alagoas</option> 
+                <option value="am">Amazonas</option> 
+                <option value="ap">Amapá</option> 
+                <option value="ba">Bahia</option> 
+                <option value="ce">Ceará</option> 
+                <option value="df">Distrito Federal</option> 
+                <option value="es">Espírito Santo</option> 
+                <option value="go">Goiás</option> 
+                <option value="ma">Maranhão</option> 
+                <option value="mt">Mato Grosso</option> 
+                <option value="ms">Mato Grosso do Sul</option> 
+                <option value="mg">Minas Gerais</option> 
+                <option value="pa">Pará</option> 
+                <option value="pb">Paraíba</option> 
+                <option value="pr">Paraná</option> 
+                <option value="pe">Pernambuco</option> 
+                <option value="pi">Piauí</option> 
+                <option value="rj">Rio de Janeiro</option> 
+                <option value="rn">Rio Grande do Norte</option> 
+                <option value="ro">Rondônia</option> 
+                <option value="rs">Rio Grande do Sul</option> 
+                <option value="rr">Roraima</option> 
+                <option value="sc">Santa Catarina</option> 
+                <option value="se">Sergipe</option> 
+                <option value="sp">São Paulo</option> 
+                <option value="to">Tocantins</option> 
+          </div>
+        </div>
+    <div class="dados">
+    Dados Profissionais
+        
+     <div>
+     <label for="Natura">Natureza do Cargo</label><br>
+     <input type="radio" name="radio" value="sim" checked/>Gerência
+     <input type="radio" name="radio" value="nao"/>Financeiro
+     <input type="radio" name="radio" value="talvez"/>Recepção
+     <input type="radio" name="radio" value="quem_sabe"/> Administrativo
+     <input type="radio" name="radio" value="quem_sabe"/> jurídico
+     <br>
+
+    <label for="Dados" id="interesse">Área de interesse</label><br>
+     <input type="checkbox" name="opcoes" value="Computação"/>Computação 
+     <input type="checkbox" name="opcoes" value="Biologia"/> Biologia
+     <input type="checkbox" name="opcoes" value="Meio Ambiente"/> Meio Ambiente
+     <input type="checkbox" name="opcoes" value="Engenharia"/> Engenharia
+     <input type="checkbox" name="opcoes" value="História"/> História
+    </div>
+    <div>
+          <label  id= "msg" for="msg">Mini-curriculo:</label>
+          <textarea id="msg" name="usuario_msg"></textarea>
+    </div>
+        <div class="botoes">
+            <button id="Enviar">Enviar</button> 
+        </div>
+        <div class="botoes">
+            <button id="Apagar">limpar</button>
+        </div>
+        </div>
+    </form>
+    
+
+      <script src="./formulario.js"></script>
+</body>
+</html>
